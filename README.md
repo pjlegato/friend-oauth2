@@ -94,7 +94,7 @@ Near where your Ring stack is being constructed, add the following requires:
 ### 4) Provide your OAuth2 client-id and client-secret to friend-oauth2
 
 
-Using Environ and  [Google APIs OAuth2](https://developers.google.com/accounts/docs/OAuth2), as an example):
+Using Environ and [Google APIs OAuth2](https://developers.google.com/accounts/docs/OAuth2) as an example:
 
 ```clojure
 (def client-config
