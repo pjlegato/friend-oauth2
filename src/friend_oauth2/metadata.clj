@@ -11,7 +11,15 @@
 
 
   Within your credential-fn, you can call extract-user-metadata on the
-  token passed into credential-fn to get a metadata map about the user. For example:
+  token passed into credential-fn to get a metadata map about the user.
+
+  Note that the exact set of available metadata is
+  provider-specific. Consult the provider's docs to see what metadata
+  they make available.
+
+   Using Google as an example
+  provider (https://developers.google.com/accounts/docs/OAuth2Login#obtainuserinfo),
+  we can do:
 
     (defn credential-fn
      \"Given an OAuth2 token, returns either a Friend identity map or nil.\"
