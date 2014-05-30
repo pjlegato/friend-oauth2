@@ -20,10 +20,12 @@
 
 ;; http://tools.ietf.org/html/draft-ietf-oauth-v2-31#section-5.1
 (def access-token-response-fixture
-  (-> "{\"access_token\": \"my-access-token\"}"
+  (-> "{\"access_token\": \"my-access-token\", \"id_token\": \"eyJ0eXAiOiJKV1QiLA0KICJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJqb2UiLA0KICJleHAiOjEzMDA4MTkzODAsDQogImh0dHA6Ly9leGFtcGxlLmNvbS9pc19yb290Ijp0cnVlfQ.dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk\"}"
       response
       (content-type "application/json")))
 
 (def identity-fixture
   {:identity "my-access-token"
    :access_token "my-access-token"})
+
+
